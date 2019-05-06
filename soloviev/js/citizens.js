@@ -36,12 +36,12 @@ $(function() {
       logo.css("display", "none");
       logo_light.css("display", "block");
     } else if (top >= hight + 100) {
-      hamb.hide();
-      top_logo.hide();
+      hamb.addClass("swipe-right");
+      top_logo.addClass("swipe-left");
     } else{
       menu.addClass("show");
-      hamb.show();
-      top_logo.show();
+      hamb.removeClass("swipe-right").show();
+      top_logo.removeClass("swipe-left");
       logo.css("display", "block");
       logo_light.css("display", "none");
     }
