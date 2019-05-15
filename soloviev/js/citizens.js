@@ -27,50 +27,62 @@ $(function() {
   //to-top-btn-opacity
   var menu = $(".header-citizens-menu");
   var hight = $(window).height();
-  $(window).scroll(function() {
-    var top = $(this).scrollTop();
-    if ( top <= hight-150) {
-      menu.removeClass("show");
-      hamb.removeClass('unvisible').hide();
-      top_logo.show();
-      logo.css("display", "none");
-      logo_light.css("display", "block");
-    } else if (top >= hight + 100) {
-      hamb.addClass("swipe-right");
-      top_logo.addClass("swipe-left");
-    } else{
-      menu.addClass("show");
-      hamb.removeClass("swipe-right").show();
-      top_logo.removeClass("swipe-left");
-      logo.css("display", "block");
-      logo_light.css("display", "none");
-    }
-  });
-
-  //onepage_scroll
-
-  var menu = $(".header-menu");
   var hamb = $(".hamburger");
   var top_logo = $(".top-logo");
   var logo = $(".logo-pic");
   var logo_light = $(".logo-light-pic");
   var sec2 = $(".section-projects");
+  var flag = true;
 
+  $(window).scroll(function() {
+    var top = $(this).scrollTop();
+    if ($(window).width() > 578) {
+      if ( top <= hight-150) {
+        menu.removeClass("show");
+        hamb.removeClass('unvisible').hide();
+        top_logo.show();
+        logo.css("display", "none");
+        logo_light.css("display", "block");
+      } else if (top >= hight + 100) {
+        hamb.addClass("swipe-right");
+        top_logo.addClass("swipe-left");
+      } else{
+        menu.addClass("show");
+        hamb.removeClass("swipe-right").show();
+        top_logo.removeClass("swipe-left");
+        logo.css("display", "block");
+        logo_light.css("display", "none");
+      }
+    } else {
+      hamb.removeClass('unvisible');
+      menu.slideUp();
+      flag = true;
+    }
+  });
+
+  //onepage_scroll
 
   hamb.on('click', function() {
     hamb.toggleClass('is-active');
-    menu.toggleClass('hidden').toggleClass('scale');
+    if ($(window).width() > 576) {
+        menu.toggleClass('scale');
+    } else if(flag){
+        menu.slideDown();
+        flag = false;
+    } else {
+        menu.slideUp();
+        flag = true;
+    }
   });
 
   $(document).on("mousewheel", function(){
       if ($(document).scrollTop() <= 400 ) {
         $('html,body').animate({
-        scrollTop: sec2.offset().top
+          scrollTop: sec2.offset().top
       }, 500);
       $(document).off("mousewheel")
     }
-  })
-
+  });
   
 
 });
