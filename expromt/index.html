@@ -30,9 +30,21 @@
 
 	<header>
 
+		<div class="close"></div>
+		<div class="header_humb hide"></div>
+		<div class="header_soc hide">
+			<a href="#"><img src="img/icons/1.png" alt=""></a>
+			<a href="#"><img src="img/icons/2.png" alt=""></a>
+			<a href="#"><img src="img/icons/3.png" alt=""></a>
+			<a href="#"><img src="img/icons/4.png" alt=""></a>
+			<a href="#"><img src="img/icons/5.png" alt=""></a>
+			<a href="#"><img src="img/icons/6.png" alt=""></a>
+		</div>
+
 		<div class="header_vid"></div>
 
 		<div class="container header_content">
+
 
 			<nav class="row">
 				<ul class="menu">
@@ -42,7 +54,7 @@
 					<li>
 						<a href="#"><div class="nav_item">Расписание</div></a>
 					</li>
-					<li>
+					<li class="hidden">
 						<a href="#"><div class="nav_item">стоимость</div></a>
 					</li>
 					<li class="sub">
@@ -70,21 +82,35 @@
 						<a href="#"><div class="nav_item">контакты</div></a>
 					</li>
 				</ul>
+				<div class="menu_soc hide">
+					<a href="#"><img src="img/icons/01.png" alt=""></a>
+					<a href="#"><img src="img/icons/02.png" alt=""></a>
+					<a href="#"><img src="img/icons/03.png" alt=""></a>
+					<a href="#"><img src="img/icons/04.png" alt=""></a>
+					<a href="#"><img src="img/icons/05.png" alt=""></a>
+					<a href="#"><img src="img/icons/06.png" alt=""></a>
+				</div>
+				<div class="menu_address hide">
+					8 (3822) 696-000, 511-739<br>		
+					34009, Россия, г. Томск пр. Ленина 159
+				</div>
 			</nav>
 
 			<div class="row">
-				<div class="header-left col-lg-6">
+				<div class="header-left col-md-6">
 					<img src="img/exprmt_logo_main.png" class="header-left_logo" alt="logo">
 					<span class="header-left_phone">8 (3822) 696-000, 511-739</span>
 				</div>
-				<div class="header-right col-lg-6">
-					<span class="header-right_text">Выбери свой стиль <br>— танцуй!</span>
+				<div class="header-right col-md-6">
+					<span class="header-right_text mobile-hide">Выбери свой стиль — танцуй!</span>
 					<a href="#" class="header-right_button">
 						<span>Записаться</span>
-						<img src="img/icons/стрелочка.png" alt="">
+						<span>
+							<img src="img/icons/стрелочка.png" alt="">
+						</span>
 					</a>
 					<div class="flex">
-						<div class="header-right_soc">
+						<div class="header-right_soc mobile-hide">
 							<a href="#"><img src="img/icons/1.png" alt=""></a>
 							<a href="#"><img src="img/icons/2.png" alt=""></a>
 							<a href="#"><img src="img/icons/3.png" alt=""></a>
@@ -92,7 +118,7 @@
 							<a href="#"><img src="img/icons/5.png" alt=""></a>
 							<a href="#"><img src="img/icons/6.png" alt=""></a>
 						</div>
-						<div class="header-right_info">
+						<div class="header-right_info mobile-hide">
 							<span>634009, Россия,</span>
 							<span class="address underline"> г. Томск пр. Ленина 159</span><br>
 							<div class="map">
@@ -142,14 +168,14 @@
 
 			<div class="row">
 
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-4">
 					<span class="titles">Новости</span>
 					<div class="slick">
 						<div class="news">
-							<div class="col-lg-6">
+							<div class="col-lg-6 hidden col-sm-12">
 								<div class="news_pic"></div>
 							</div>
-							<div class="news_text col-lg-6">
+							<div class="news_text col-lg-6 col-md-12">
 								<span>
 									Только один концерт! Только этим летом! Главное событие 16-го учебного сезона! Танцевальное шоу "EXPROMT"
 								</span>
@@ -160,10 +186,10 @@
 							</div>
 						</div>
 						<div class="news">
-							<div class="col-lg-6">
+							<div class="col-lg-6 hidden col-sm-12">
 								<div class="news_pic"></div>
 							</div>
-							<div class="news_text col-lg-6">
+							<div class="news_text col-lg-6 col-md-12">
 								<span>
 									Только один концерт! Только этим летом! Главное событие 16-го учебного сезона! Танцевальное шоу "EXPROMT"
 								</span>
@@ -176,7 +202,7 @@
 					</div>
 				</div>
 
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-8 mobile-padding">
 					<span class="titles">Направления</span>
 					<div class="slick-vector">
 						<div class="vector jass">
@@ -232,7 +258,7 @@
 
 	<section class="container">
 		<div class="row">
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-6">
 				<div class="advantage">
 					<div class="advantage_img">
 						<img src="img/icons/история.png" alt="">
@@ -243,7 +269,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-6">
 				<div class="advantage">
 					<div class="advantage_img">
 						<img src="img/icons/комфорт.png" alt="">
@@ -254,7 +280,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-6">
 				<div class="advantage">
 					<div class="advantage_img">
 						<img src="img/icons/опыт.png" alt="">
@@ -265,7 +291,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-lg-3 col-md-6">
 				<div class="advantage">
 					<div class="advantage_img">
 						<img src="img/icons/выступления.png" alt="">
@@ -282,7 +308,7 @@
 	<section class="container teacher">
 		<div class="row">
 
-			<div class="col-lg-6">
+			<div class="col-lg-6 col-md-12 full">
 				<span class="titles">Интерьер</span>
 				<div class="slick">
 					<div class="interior">
@@ -312,10 +338,10 @@
 				</div>
 			</div>
 
-			<div class="col-lg-6">
+			<div class="col-lg-6 col-md-12">
 				<div class="teachers">Педагоги</div>
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg-6 col-md-5">
 						<div class="teacher_photo">
 							<img src="img/петр.png" alt="">
 						</div>
@@ -331,12 +357,12 @@
 								</div>
 							</div>
 							<div class="name">
-								<span>Горецкий</span>
+								<span>Горецкий</span><br>
 								<span>Петр</span>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-md-6">
 						<div class="teacher_position">Директор, <br>педагог - хореограф</div>
 						<p class="teacher_text">Руководитель, главный режиссер и постановщик танцевальных спектаклей, шоу, вечеринок Томской студии современного танца Петра Горецкого «EXPROMT»…</p>
 						<a href="#" class="teacher_tags">Классический танец,</a>
@@ -431,7 +457,7 @@
 			<div class="slogan_button">
 				<a href="#" class="button">
 					<span>Записаться</span>
-					<img src="img/icons/стрелочка.png" alt="">
+					<span><img src="img/icons/стрелочка.png" alt=""></span>
 				</a>
 			</div>
 		</div>
@@ -439,7 +465,7 @@
 	
 	<footer class="container footer">
 		<div class="row">
-			<div class="footer_content">
+			<div class="footer_content col-lg-8 col-md-12">
 				<div class="left">
 					<span>©2016 EXPROMT</span>
 					<span class="worktime underline">
@@ -471,7 +497,7 @@
 				</div>
 				<div class="right">
 					<div>
-						<span>8 (3822) 696-000, 511-739, 8-952-885-3092</span>
+						<span class="phone">8 (3822) 696-000, 511-739</span><span class="zap">,</span><span> 8-952-885-3092</span>
 						<span class="mail">expromts@yandex.ru</span>
 					</div>
 					<span>634009, Россия,</span>
@@ -492,7 +518,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="footer_links">
+			<div class="footer_links col-lg-4 col-md-12">
 				<div class="links">
 					<a href="#"><img src="img/icons/1.png" alt=""></a>
 					<a href="#"><img src="img/icons/2.png" alt=""></a>
@@ -501,10 +527,10 @@
 					<a href="#"><img src="img/icons/5.png" alt=""></a>
 					<a href="#"><img src="img/icons/6.png" alt=""></a>
 				</div>
-				<div>
+				<div class="app">
 					<a href="#"><img src="img/icons/App store.png" alt=""></a>
 				</div>
-				<div class="margin">
+				<div class="margin app">
 					<a href="#"><img src="img/icons/Google play.png" alt=""></a>
 				</div>
 			</div>
