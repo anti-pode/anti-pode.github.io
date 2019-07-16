@@ -1,8 +1,0 @@
-svg path,
-svg rect {
-    stroke: #dadada;
-    fill: #dadada;
-}svg:hover path,
-svg:hover rect {
-    stroke: #fff;
-    fill: #fff;
